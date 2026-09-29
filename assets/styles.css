@@ -1,0 +1,147 @@
+:root {
+  color-scheme: light;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  background: #eef5f2;
+  color: #102c28;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  line-height: 1.65;
+}
+a {
+  color: #076a58;
+  text-underline-offset: 0.18em;
+}
+a:focus-visible {
+  outline: 3px solid #0a8069;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -5rem;
+  background: #fff;
+  color: #023b33;
+  padding: 0.75rem 1rem;
+  z-index: 10;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+header {
+  background: linear-gradient(145deg, #023b33, #076a58);
+  color: #fff;
+}
+.header-inner,
+main,
+footer {
+  width: min(100% - 2rem, 52rem);
+  margin-inline: auto;
+}
+.header-inner {
+  padding: 2rem 0;
+}
+.brand {
+  color: #91f2d4;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.breadcrumbs a {
+  color: #fff;
+}
+main {
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 16px 44px rgb(2 59 51 / 0.12);
+  margin-block: 1.5rem;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  overflow-wrap: anywhere;
+}
+h1,
+h2 {
+  line-height: 1.2;
+}
+h1 {
+  font-size: clamp(2rem, 7vw, 3.25rem);
+  margin: 0 0 0.75rem;
+}
+h2 {
+  font-size: clamp(1.25rem, 4vw, 1.55rem);
+  margin-top: 2rem;
+}
+.lede {
+  color: #365b55;
+  font-size: 1.15rem;
+}
+.meta {
+  color: #55716c;
+  font-size: 0.95rem;
+}
+.resource-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.resource-grid a {
+  border: 1px solid #bdd6d0;
+  border-radius: 1rem;
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+.resource-grid a:hover {
+  background: #effbf7;
+  border-color: #0a8069;
+}
+.resource-grid span {
+  color: #365b55;
+}
+.button {
+  background: #087b65;
+  border-radius: 0.75rem;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+}
+footer {
+  color: #365b55;
+  padding: 0 0 2rem;
+}
+@media (max-width: 24rem) {
+  main {
+    border-radius: 0.8rem;
+    padding: 1rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
